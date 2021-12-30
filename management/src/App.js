@@ -41,7 +41,14 @@ class App extends Component {
       <div>
         <Table>
           <TableHead>
-            <TableCell></TableCell>
+            <TableRow>
+              <TableCell>Id</TableCell>
+              <TableCell>Profile</TableCell>
+              <TableCell>Name</TableCell>
+              <TableCell>Birthday</TableCell>
+              <TableCell>Gender</TableCell>
+              <TableCell>Job</TableCell>
+            </TableRow>
           </TableHead>
           <TableBody>
             {customers.map(c => { return( <Customer key={c.id} id={c.id} image={c.image} name={c.name} birthday={c.birthday} gender={c.gender} job={c.job} />)})}
