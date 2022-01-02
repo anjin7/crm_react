@@ -1,6 +1,10 @@
 {
   "name": "management",
   "version": "1.0.0",
+  "script": {
+    "build": "babel src -d lib",
+    "test": "jest"
+  },
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
@@ -8,9 +12,12 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"
-  }
+  },
+  "main": "index.js",
+  "license": "MIT"
 }
