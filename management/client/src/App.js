@@ -8,44 +8,21 @@ import TableBody from '@mui/material/TableBody';
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import { withStyles } from '@mui/styles';
+import CircularProgress from '@mui/material/CircularProgress';
+import { createTheme } from '@mui/material/styles';
+
+const theme = createTheme();
 
 const styles ={
   root: {
     width: '100%',
-    marginTop: 'theme.spacing(3)',
+    marginTop: theme.spacing(3),
     overflowX: 'auto'
   },
   table: {
     minWidth: '1080px'
   },
 };
-
-// const customers = [
-//   {
-//   'id': 1,
-//   'image': 'https://placeimg.com/64/64/1',
-//   'name': 'Hong Gil Dong',
-//   'birthday': '19961222',
-//   'gender': 'male',
-//   'job': 'student'
-// },
-// {
-//   'id': 2,
-//   'image': 'https://placeimg.com/64/64/2',
-//   'name': 'Lee Do',
-//   'birthday': '19910515',
-//   'gender': 'male',
-//   'job': 'teacher'
-// },
-// {
-//   'id': 3,
-//   'image': 'https://placeimg.com/64/64/3',
-//   'name': 'Lee Sun Sin',
-//   'birthday': '19931020',
-//   'gender': 'male',
-//   'job': 'programer'
-// },
-// ];
 
 class App extends Component {
 
