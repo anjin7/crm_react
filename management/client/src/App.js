@@ -72,7 +72,7 @@ class App extends Component {
               return( <Customer key={c.id} id={c.id} image={c.image} name={c.name} birthday={c.birthday} gender={c.gender} job={c.job} />)
             }) : 
             <TableRow>
-              <TableCell colspan="6" align="center">
+              <TableCell colSpan="6" align="center">
                 <CircularProgress className={classes.progress} variant='determinate' value={this.state.completed}></CircularProgress>
               </TableCell>
             </TableRow>
